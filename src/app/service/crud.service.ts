@@ -12,7 +12,8 @@ export class CrudService {
   serviceURL : string;
 
   constructor(private http : HttpClient) { 
-    this.serviceURL = "http://localhost:3000/tasks"
+    // this.serviceURL = "http://localhost:3000/tasks"
+    this.serviceURL = "https://todo-list-tasks.onrender.com/tasks"
   }
 
   addTask(task : Task) : Observable<Task>{
